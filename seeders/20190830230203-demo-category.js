@@ -12,20 +12,32 @@ module.exports = {
         isBetaMember: false
       }], {});
     */
-   return queryInterface.bulkInsert('categories', [ {
-   
-    name : 'Cemilan'
-},
-{
- 
-    name : 'Makanan Utama'
-},
-{
-    name : 'Makanan Penutup'
-},
-{
-    name : 'Minuman'
-},], {});
+    return queryInterface.bulkInsert('categories', [{
+
+      name: 'Cemilan',
+      createdAt: new Date(),
+      updatedAt: new Date()
+
+    },
+    {
+
+      name: 'Makanan Utama',
+      createdAt: new Date(),
+      updatedAt: new Date()
+
+    },
+    {
+      name: 'Makanan Penutup',
+      createdAt: new Date(),
+      updatedAt: new Date()
+
+    },
+    {
+      name: 'Minuman',
+      createdAt: new Date(),
+      updatedAt: new Date()
+
+    },], {});
   },
 
   down: (queryInterface, Sequelize) => {
@@ -36,6 +48,6 @@ module.exports = {
       Example:
       return queryInterface.bulkDelete('People', null, {});
     */
-   return queryInterface.bulkDelete('categories', null, {});
+    return queryInterface.bulkDelete('categories', null, {});
   }
 };
