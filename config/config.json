@@ -18,9 +18,9 @@
   },
   "production": {
     "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "password": "GNKkdl86147",
+    "database": "restaurant-api",
+    "host": "node440-realp.user-domain.cybermantra.xyz",
     "dialect": "mysql",
     "operatorsAliases": false
   }
